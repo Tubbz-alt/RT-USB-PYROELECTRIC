@@ -1,2 +1,3 @@
-# RT-USB-PYROELECTRIC
-USB出力焦電センサのマニュアル, サンプルプログラム
+# RT-USB-PYROELECTRIC dev Branch
+USB出力焦電センサの開発中のプログラムを格納
+
