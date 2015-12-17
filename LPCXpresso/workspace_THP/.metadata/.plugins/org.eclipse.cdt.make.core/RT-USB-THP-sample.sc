@@ -2,14 +2,14 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="com.crt.advproject.config.exe.debug.1613630249;com.crt.advproject.config.exe.debug.1613630249.;com.crt.advproject.gcc.exe.debug.1727666027;com.crt.advproject.compiler.input.2144397252">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/redlib/include"/>
-<includePath path="c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/features/include"/>
+<includePath path="/Applications/lpcxpresso_7.9.0_455/lpcxpresso/tools/redlib/include"/>
+<includePath path="/Applications/lpcxpresso_7.9.0_455/lpcxpresso/tools/features/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
 <definedSymbol symbol="__GNUC_MINOR__=9"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
-<definedSymbol symbol="__VERSION__=&quot;4.9.3 20141119 (release) [ARM/embedded-4_9-branch revision 218278]&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.3 20150529 (release) [ARM/embedded-4_9-branch revision 224288]&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -328,7 +328,7 @@
 <definedSymbol symbol="__SIZEOF_PTRDIFF_T__=4"/>
 <definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_MINIMAL_ENUM=1"/>
-<definedSymbol symbol="__ARM_SIZEOF_WCHAR_T=32"/>
+<definedSymbol symbol="__ARM_SIZEOF_WCHAR_T=4"/>
 <definedSymbol symbol="__arm__=1"/>
 <definedSymbol symbol="__ARM_ARCH=4"/>
 <definedSymbol symbol="__ARM_ARCH_ISA_ARM=1"/>
@@ -350,14 +350,14 @@
 </instance>
 <instance id="com.crt.advproject.config.exe.debug.1613630249;com.crt.advproject.config.exe.debug.1613630249.;com.crt.advproject.gas.exe.debug.1764754068;com.crt.advproject.assembler.input.196521222">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/redlib/include"/>
-<includePath path="c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/features/include"/>
+<includePath path="/Applications/lpcxpresso_7.9.0_455/lpcxpresso/tools/redlib/include"/>
+<includePath path="/Applications/lpcxpresso_7.9.0_455/lpcxpresso/tools/features/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
 <definedSymbol symbol="__GNUC_MINOR__=9"/>
 <definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
-<definedSymbol symbol="__VERSION__=&quot;4.9.3 20141119 (release) [ARM/embedded-4_9-branch revision 218278]&quot;"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.3 20150529 (release) [ARM/embedded-4_9-branch revision 224288]&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -676,7 +676,7 @@
 <definedSymbol symbol="__SIZEOF_PTRDIFF_T__=4"/>
 <definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_MINIMAL_ENUM=1"/>
-<definedSymbol symbol="__ARM_SIZEOF_WCHAR_T=32"/>
+<definedSymbol symbol="__ARM_SIZEOF_WCHAR_T=4"/>
 <definedSymbol symbol="__arm__=1"/>
 <definedSymbol symbol="__ARM_ARCH=4"/>
 <definedSymbol symbol="__ARM_ARCH_ISA_ARM=1"/>

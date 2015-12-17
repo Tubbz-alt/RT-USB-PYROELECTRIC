@@ -50,56 +50,7 @@
 						<entry kind="macro" name="__REDLIB__" value=""/>
 						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
 					</resource>
-					<resource project-relative-path="src/USB/cdcuser.c">
-						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/USB">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="macro" name="CORE_M3" value=""/>
-						<entry kind="macro" name="DEBUG" value=""/>
-						<entry kind="macro" name="__CODE_RED" value=""/>
-						<entry kind="macro" name="__LPC13XX__" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
-					</resource>
 					<resource project-relative-path="src/MODE/mode_BluetoothSetting.c">
-						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/USB">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MODE">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="macro" name="CORE_M3" value=""/>
-						<entry kind="macro" name="DEBUG" value=""/>
-						<entry kind="macro" name="__CODE_RED" value=""/>
-						<entry kind="macro" name="__LPC13XX__" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
-					</resource>
-					<resource project-relative-path="src/PERIPHERAL/ssp.c">
 						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -148,7 +99,7 @@
 						<entry kind="macro" name="__REDLIB__" value=""/>
 						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
 					</resource>
-					<resource project-relative-path="src/MAIN/main.c">
+					<resource project-relative-path="src/USB/usbdesc.c">
 						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -194,7 +145,7 @@
 						<entry kind="macro" name="__REDLIB__" value=""/>
 						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
 					</resource>
-					<resource project-relative-path="src/USB/usbdesc.c">
+					<resource project-relative-path="src/MAIN/tinyMathFunctions.c">
 						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -205,6 +156,176 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MODE">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC13XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
+					</resource>
+					<resource project-relative-path="src/PERIPHERAL/SystemTickTimer.c">
+						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/USB">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC13XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
+					</resource>
+					<resource project-relative-path="src/MAIN/bme280.c">
+						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/USB">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC13XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
+					</resource>
+					<resource project-relative-path="src/MAIN/UserInterface.c">
+						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/USB">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC13XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
+					</resource>
+					<resource project-relative-path="src/PERIPHERAL/gpio.c">
+						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/USB">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC13XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
+					</resource>
+					<resource project-relative-path="src/MAIN/mpu9150.c">
+						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/USB">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MODE">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC13XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
+					</resource>
+					<resource project-relative-path="src/USB/cdcuser.c">
+						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/USB">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC13XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
+					</resource>
+					<resource project-relative-path="src/PERIPHERAL/ssp.c">
+						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/USB">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/inc/MODE">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
@@ -240,7 +361,7 @@
 						<entry kind="macro" name="__REDLIB__" value=""/>
 						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
 					</resource>
-					<resource project-relative-path="src/MAIN/tinyMathFunctions.c">
+					<resource project-relative-path="src/MAIN/main.c">
 						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -251,9 +372,6 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MODE">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
@@ -313,29 +431,6 @@
 						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
 					</resource>
 					<resource project-relative-path="src/PERIPHERAL/ad.c">
-						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/USB">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="macro" name="CORE_M3" value=""/>
-						<entry kind="macro" name="DEBUG" value=""/>
-						<entry kind="macro" name="__CODE_RED" value=""/>
-						<entry kind="macro" name="__LPC13XX__" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
-					</resource>
-					<resource project-relative-path="src/PERIPHERAL/SystemTickTimer.c">
 						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -427,52 +522,6 @@
 						<entry kind="macro" name="__REDLIB__" value=""/>
 						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
 					</resource>
-					<resource project-relative-path="src/MAIN/bme280.c">
-						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/USB">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="macro" name="CORE_M3" value=""/>
-						<entry kind="macro" name="DEBUG" value=""/>
-						<entry kind="macro" name="__CODE_RED" value=""/>
-						<entry kind="macro" name="__LPC13XX__" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
-					</resource>
-					<resource project-relative-path="src/MAIN/UserInterface.c">
-						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/USB">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="macro" name="CORE_M3" value=""/>
-						<entry kind="macro" name="DEBUG" value=""/>
-						<entry kind="macro" name="__CODE_RED" value=""/>
-						<entry kind="macro" name="__LPC13XX__" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
-					</resource>
 					<resource project-relative-path="src/USB/usbcore.c">
 						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
@@ -507,32 +556,6 @@
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MAIN">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="macro" name="CORE_M3" value=""/>
-						<entry kind="macro" name="DEBUG" value=""/>
-						<entry kind="macro" name="__CODE_RED" value=""/>
-						<entry kind="macro" name="__LPC13XX__" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value="CMSISv1p30_LPC13xx"/>
-					</resource>
-					<resource project-relative-path="src/MAIN/mpu9150.c">
-						<entry kind="includePath" name="/CMSISv1p30_LPC13xx/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/PERIPHERAL">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/USB">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/OTHER">
-							<flag value="VALUE_WORKSPACE_PATH"/>
-						</entry>
-						<entry kind="includePath" name="/${ProjName}/inc/MODE">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/inc/MAIN">

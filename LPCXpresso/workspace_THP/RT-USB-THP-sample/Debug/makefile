@@ -32,7 +32,7 @@ all: RT-USB-THP-sample.axf
 RT-USB-THP-sample.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\ryota\OneDrive\RT working\RT-USB-THP\workspace_1118_takahashi\CMSISv1p30_LPC13xx\Debug" -Xlinker -Map="RT-USB-THP-sample.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "RT-BLUETOOTH-9AXIS-sample_Debug.ld" -o "RT-USB-THP-sample.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/Users/nakagawayuki/git/RT-USB-PYROELECTRIC/LPCXpresso/workspace_THP/CMSISv1p30_LPC13xx/Debug" -Xlinker -Map="RT-USB-THP-sample.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "RT-BLUETOOTH-9AXIS-sample_Debug.ld" -o "RT-USB-THP-sample.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

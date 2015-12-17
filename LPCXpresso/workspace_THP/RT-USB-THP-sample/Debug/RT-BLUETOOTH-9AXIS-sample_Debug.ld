@@ -1,30 +1,28 @@
 /*
  * GENERATED FILE - DO NOT EDIT
- * (c) Code Red Technologies Ltd, 2008-13
+ * (c) Code Red Technologies Ltd, 2008-2013
  * (c) NXP Semiconductors 2013-2015
  * Generated linker script file for LPC1343
- * Created from generic_c.ld (7.7.2 ())
- * By LPCXpresso v7.7.2 [Build 379] [2015-03-31]  on Wed Nov 18 12:22:16 JST 2015
+ * Created from linkscript.ldt by FMCreateLinkLibraries
+ * Using Freemarker v2.3.23
+ * LPCXpresso v7.9.0 [Build 455] [2015-07-23]  on 2015/12/17 13:35:27
  */
 
-
-INCLUDE "RT-BLUETOOTH-9AXIS-sample_Debug_lib.ld"
-INCLUDE "RT-BLUETOOTH-9AXIS-sample_Debug_mem.ld"
+INCLUDE "RT-BLUETOOTH-9AXIS-sample_Debug_library.ld"
+INCLUDE "RT-BLUETOOTH-9AXIS-sample_Debug_memory.ld"
 
 ENTRY(ResetISR)
 
 SECTIONS
 {
-
-    /* MAIN TEXT SECTION */    
+    /* MAIN TEXT SECTION */
     .text : ALIGN(4)
     {
         FILL(0xff)
         __vectors_start__ = ABSOLUTE(.) ;
         KEEP(*(.isr_vector))
-        
         /* Global Section Table */
-        . = ALIGN(4) ;
+        . = ALIGN(4) ; 
         __section_table_start = .;
         __data_section_table = .;
         LONG(LOADADDR(.data));
@@ -36,11 +34,10 @@ SECTIONS
         LONG(  SIZEOF(.bss));
         __bss_section_table_end = .;
         __section_table_end = . ;
-        /* End of Global Section Table */
-        
+	    /* End of Global Section Table */
 
         *(.after_vectors*)
-        
+
         /* Code Read Protect data */
         . = 0x000002FC ;
         PROVIDE(__CRP_WORD_START__ = .) ;
@@ -48,60 +45,50 @@ SECTIONS
         PROVIDE(__CRP_WORD_END__ = .) ;
         ASSERT(!(__CRP_WORD_START__ == __CRP_WORD_END__), "Linker CRP Enabled, but no CRP_WORD provided within application");
         /* End of Code Read Protect */
-        
     } >MFlash32
-    
+
     .text : ALIGN(4)    
     {
-         *(.text*)
+        *(.text*)
         *(.rodata .rodata.* .constdata .constdata.*)
         . = ALIGN(4);
-        
     } > MFlash32
-
     /*
      * for exception handling/unwind - some Newlib functions (in common
      * with C++ and STDC++) use this. 
      */
-    .ARM.extab : ALIGN(4)
+    .ARM.extab : ALIGN(4) 
     {
-    	*(.ARM.extab* .gnu.linkonce.armextab.*)
+        *(.ARM.extab* .gnu.linkonce.armextab.*)
     } > MFlash32
     __exidx_start = .;
-    
+
     .ARM.exidx : ALIGN(4)
     {
-    	*(.ARM.exidx* .gnu.linkonce.armexidx.*)
+        *(.ARM.exidx* .gnu.linkonce.armexidx.*)
     } > MFlash32
     __exidx_end = .;
-    
+
     _etext = .;
         
-    
     /* MAIN DATA SECTION */
-    
-
     .uninit_RESERVED : ALIGN(4)
     {
         KEEP(*(.bss.$RESERVED*))
         . = ALIGN(4) ;
         _end_uninit_RESERVED = .;
     } > RamLoc8
-
-	
-	/* Main DATA section (RamLoc8) */
-	.data : ALIGN(4)
-	{
-	   FILL(0xff)
-	   _data = . ;
-	   *(vtable)
-	   *(.ramfunc*)
-	   *(.data*)
-	   . = ALIGN(4) ;
-	   _edata = . ;
-	} > RamLoc8 AT>MFlash32
-
-
+    /* Main DATA section (RamLoc8) */
+    .data : ALIGN(4)
+    {
+       FILL(0xff)
+       _data = . ;
+       *(vtable)
+       *(.ramfunc*)
+       *(.data*)
+       . = ALIGN(4) ;
+       _edata = . ;
+    } > RamLoc8 AT>MFlash32
     /* MAIN BSS SECTION */
     .bss : ALIGN(4)
     {
@@ -112,8 +99,6 @@ SECTIONS
         _ebss = .;
         PROVIDE(end = .);
     } > RamLoc8
-        
-    
     /* DEFAULT NOINIT SECTION */
     .noinit (NOLOAD): ALIGN(4)
     {
@@ -122,7 +107,18 @@ SECTIONS
          . = ALIGN(4) ;
         _end_noinit = .;
     } > RamLoc8
-    
+
     PROVIDE(_pvHeapStart = DEFINED(__user_heap_base) ? __user_heap_base : .);
     PROVIDE(_vStackTop = DEFINED(__user_stack_top) ? __user_stack_top : __top_RamLoc8 - 0);
+
+    /* ## Create checksum value (used in startup) ## */
+    PROVIDE(__valid_user_code_checksum = 0 - 
+                                         (_vStackTop 
+                                         + (ResetISR + 1) 
+                                         + (NMI_Handler + 1) 
+                                         + (HardFault_Handler + 1) 
+                                         + (( DEFINED(MemManage_Handler) ? MemManage_Handler : 0 ) + 1)   /* MemManage_Handler may not be defined */
+                                         + (( DEFINED(BusFault_Handler) ? BusFault_Handler : 0 ) + 1)     /* BusFault_Handler may not be defined */
+                                         + (( DEFINED(UsageFault_Handler) ? UsageFault_Handler : 0 ) + 1) /* UsageFault_Handler may not be defined */
+                                         ) );
 }

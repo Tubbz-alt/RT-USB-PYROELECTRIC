@@ -13,6 +13,7 @@
 #include "debug.h"
 #include "i2c.h"
 #include "io.h"
+#include "gpio.h"
 //#include "ssp.h"
 #include "SystemTickTimer.h"
 #include "timer.h"
@@ -44,6 +45,7 @@ void init(void);
 int main(void) {
 
 	init();
+	GPIOInit();
 	tryUSBConnect();        //USB接続を試みる
 
 	setSendDataEnable(1);
@@ -54,7 +56,52 @@ int main(void) {
 	get_trimdata();
 	bme280_init();
 
-	while (1);
+	GPIOSetDir(PORT1,8,0);
+
+	GPIOSetDir(PORT0,11,0);
+
+	//myPrintfUSB("test");
+
+	unsigned int i;
+	int test = 1;
+	while (1){
+		/*
+		test = (LPC_GPIO0->DATA & 0x1<<11)>>1;
+		myPrintfUSB("test %d \n",test);
+		for(i=0;(i/2)<100000;i++){
+			//GPIOSetDir(PORT1,8,1);
+		}
+		test = (LPC_GPIO0->DATA & 0x1<<11)>>1;
+		myPrintfUSB("test %d \n",test);
+		for(i=0;(i/2)<100000;i++){
+			//GPIOSetDir(PORT1,8,0);
+		}
+		*/
+		///*
+		test =(LPC_GPIO0->DATA & 0x1<<11)>>1;
+		if(test == 1024)
+		{
+			GPIOSetDir(PORT1,8,1);
+			myPrintfUSB("test %d \n",test);
+		}else{
+			GPIOSetDir(PORT1,8,0);
+			myPrintfUSB("test %d \n",test);
+		}
+		for(i=0;(i/2)<1000;i++){
+			//GPIOSetDir(PORT1,8,1);
+		}
+		//*/
+
+		//LPC_GPIO0->DATA & 0x11;
+		/*
+		for(i=0;(i/2)<100000;i++){
+			GPIOSetDir(PORT1,8,1);
+		}
+		for(i=0;(i/2)<100000;i++){
+			GPIOSetDir(PORT1,8,0);
+		}
+		*/
+	}
 
 	return 0;
 }
