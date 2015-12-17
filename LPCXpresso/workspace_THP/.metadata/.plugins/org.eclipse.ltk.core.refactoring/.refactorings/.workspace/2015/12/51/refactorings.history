@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="false" description="Delete 6 resources" element1="/RT-USB-THP-sample/Debug/src/MAIN/bme280.d" element2="/RT-USB-THP-sample/Debug/src/MAIN/main.d" element3="/RT-USB-THP-sample/Debug/src/MAIN/MainFunction.d" element4="/RT-USB-THP-sample/Debug/src/MAIN/mpu9150.d" element5="/RT-USB-THP-sample/Debug/src/MAIN/tinyMathFunctions.d" element6="/RT-USB-THP-sample/Debug/src/MAIN/UserInterface.d" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1450314730745"/>
+</session>
